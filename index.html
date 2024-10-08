@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spilinea</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Inline CSS for demonstration */
+        body {
+            display: flex; /* Brug flexbox til layout */
+            flex-direction: column; /* Arranger elementer i kolonner */
+            min-height: 100vh; /* Gør så body fylder hele højden af vinduet */
+            margin: 0; /* Fjern marginer */
+        }
+
+        header {
+            background-color: #007BFF; /* Blå baggrund for header */
+            color: white; /* Hvid tekstfarve */
+            padding: 15px; /* Indvendig polstring */
+            text-align: center; /* Center tekst */
+        }
+
+        nav ul {
+            list-style: none; /* Fjern punktopstilling */
+            padding: 0; /* Fjern indvendig polstring */
+        }
+
+        nav ul li {
+            display: inline; /* Vis listeelementer i én linje */
+            margin: 0 15px; /* Tilføj afstand mellem elementer */
+        }
+
+        nav ul li a {
+            color: white; /* Hvid tekstfarve for links */
+            text-decoration: none; /* Fjern understregning */
+        }
+
+        main {
+            flex: 1; /* Gør så main fylder alt tilgængeligt plads */
+            padding: 20px; /* Indvendig polstring */
+            background-color: #f0f0f0; /* Lys baggrund */
+        }
+
+        footer {
+            background-color: #007BFF; /* Blå baggrund for footer */
+            color: white; /* Hvid tekstfarve */
+            text-align: center; /* Center tekst */
+            padding: 10px; /* Indvendig polstring */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Spilinea</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Games</a></li>
+                <li><a href="#">Om</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Games</h2>
+        <div id="game-list" class="game-list"></div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Spilinea.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
