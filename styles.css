@@ -1,0 +1,83 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: #007BFF;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    background-color: #0056b3; /* Mørkere blå baggrund */
+    color: white; /* Hvid tekstfarve */
+    text-decoration: none; /* Ingen understregning */
+    padding: 10px 15px; /* Polstring for at gøre det til en knap */
+    border-radius: 5px; /* Runde kanter */
+    transition: background-color 0.3s; /* Tilføj overgangseffekt */
+}
+
+nav a:hover {
+    background-color: #003f7f; /* Mørkere blå ved hover */
+}
+
+main {
+    padding: 20px;
+}
+
+h2 {
+    color: #333;
+}
+
+.game-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.game-item {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    text-align: center;
+    width: 200px;
+    display: flex; /* Gør game-item til flex container */
+    flex-direction: column; /* Arranger indholdet i kolonner */
+    align-items: center; /* Center indholdet horisontalt */
+}
+
+.game-item img {
+    width: 100%; /* Billedet fylder hele bredden af game-item */
+    height: 150px; /* Fast højde for billedet */
+    object-fit: cover; /* Dækker billedområdet uden at ændre proportioner */
+    border-radius: 8px; /* Runde kanter til billedet */
+}
+
+/* Ny stil for links i game-item */
+.game-item a {
+    color: #333; /* Sort eller en anden farve, du ønsker */
+    text-decoration: none; /* Ingen understregning */
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+}
